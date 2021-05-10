@@ -1,14 +1,27 @@
 .our_pets {
   margin-bottom: 100px;
   &__content {
+    margin-bottom: 20px;
   }
 
+  &__tittle {
+    text-align: center;
+    margin: 80px 0 50px 0;
+  }
   &__list {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
   &__item {
     flex: 1 1 (100%/4);
+    margin-bottom: 60px;
+    @media (max-width: $md3+px) {
+      flex: 1 1 (100%/1);
+    }
+    @media (max-width: $md2+px) {
+      flex: 1 1 (100%/3);
+    }
   }
   &__navigation {
     display: flex;
