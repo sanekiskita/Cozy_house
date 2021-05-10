@@ -29,9 +29,7 @@
 
 .logo {
   z-index: 5;
-  ._grey {
-    color: #545454;
-  }
+
   h2 {
     font-family: Georgia;
     font-size: 32px;
@@ -66,6 +64,10 @@
       &._active {
         transform: translate(0px, 0%);
       }
+      &._grey {
+        background-color: #ffffff;
+        color: #292929;
+      }
     }
   }
   &__list {
@@ -91,6 +93,7 @@
     transition: color 0.3s ease 0s;
 
     &._active {
+      color: #fafafa;
       border-bottom: 3px solid #f1cdb3;
     }
     &:hover {
@@ -106,6 +109,26 @@
     }
   }
 }
+
+.header._grey {
+  background-color: #ffffff;
+  h2,
+  p {
+    color: #545454;
+  }
+
+  .menu__link {
+    color: #545454;
+    &._active {
+      color: #292929;
+      border-bottom: 3px solid #f1cdb3;
+    }
+    &:hover {
+      color: #292929;
+    }
+  }
+}
+
 .icon-menu {
   display: none;
   @media (max-width: $md3+px) {
