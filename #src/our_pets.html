@@ -4,7 +4,28 @@
   <body>
     <div class="wrapper">
       @@include('_header.html',{ "link":"2","color":"grey" })
-      <main class="page"></main>
+      <main class="page">
+        <div class="our_pets">
+          <div class="our_pets__content width">
+            <div class="our_pets__list">
+              <div class="our_pets__item"></div>
+              <div class="our_pets__item"></div>
+              <div class="our_pets__item"></div>
+            </div>
+            <div class="our_pets__navigation">
+              <a href="" class="button_elipse --inactive navigation__prev2"
+                >&lt;&lt;</a
+              >
+              <a href="" class="button_elipse --inactive navigation__prev"
+                >&lt;</a
+              >
+              <a href="" class="button_elipse --active navigation__button">1</a>
+              <a href="" class="button_elipse navigation__next">&gt;</a>
+              <a href="" class="button_elipse navigation__next2">&gt;&gt;</a>
+            </div>
+          </div>
+        </div>
+      </main>
       @@include('_popup.html',{}) @@include('_footer.html',{})
     </div>
     @@include('_js.html',{})

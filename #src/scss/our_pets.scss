@@ -1,0 +1,24 @@
+.our_pets {
+  margin-bottom: 100px;
+  &__content {
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__item {
+    flex: 1 1 (100%/4);
+  }
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    flex-grow: 20;
+    a {
+      margin: 0 10px;
+      @media (max-width: $md3+px) {
+        margin: 0 5px;
+      }
+    }
+  }
+}
