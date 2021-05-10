@@ -237,10 +237,10 @@ function popup_open(item, video = "", name = "") {
       );
       curent_popup
         .querySelector(".popup__img img")
-        .setAttribute("src", `./img/popup/friends/${name}.svg`);
+        .setAttribute("src", `./img/img_pets/${name}.svg`);
       curent_popup
         .querySelector(".popup__img source")
-        .setAttribute("srcset", `./img/popup/friends/${name}.svg`);
+        .setAttribute("srcset", `./img/img_pets/${name}.svg`);
     }
     history.pushState("", "", "#" + item);
   }

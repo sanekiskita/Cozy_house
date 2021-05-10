@@ -85,6 +85,7 @@
     width: 100%;
     max-width: 500px;
     flex: 1 1 50%;
+    margin-right: 30px;
     @media (max-width: $md2+px) {
       max-width: 350px;
     }
