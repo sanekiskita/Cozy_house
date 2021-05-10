@@ -1,0 +1,75 @@
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  @media (max-width: $md2+px) {
+    font-size: 25px;
+  }
+}
+.text {
+}
+
+.title-posts {
+}
+
+.button_elipse {
+  color: #292929;
+  transition: 1s ease-out;
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.--primary {
+    background: #f1cdb3;
+  }
+
+  &:hover {
+    background: #fddcc4;
+    border: 2px solid #fddcc4;
+  }
+  &.--inactive {
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
+  }
+  &.--active {
+    background: #f1cdb3;
+    border: 2px solid #f1cdb3;
+  }
+}
+
+.button {
+  transition: 1s ease-out;
+  cursor: pointer;
+  color: #292929;
+  text-align: center;
+  padding: 15px 45px;
+  border-radius: 100px;
+  border: 2px solid #f1cdb3;
+  &.--primary {
+    background: #f1cdb3;
+  }
+
+  &:hover {
+    background: #fddcc4;
+    border: 2px solid #fddcc4;
+  }
+}
+
+.width {
+  width: 1200px;
+  margin: 0 auto;
+  @media (max-width: $md2+px) {
+    width: 703px;
+  }
+  @media (max-width: $md3+px) {
+    width: 300px;
+  }
+}
+//</ОСНОВНОЙ БЛОК>====================================================================================================

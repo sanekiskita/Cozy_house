@@ -1,0 +1,53 @@
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+
+<script type="module">
+  import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
+
+  const swiper = new Swiper(".pets__slider", {
+    /*effect: "fade",
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },*/
+
+    observer: true,
+    observeParents: true,
+    slidesPerView: 3,
+    spaceBetween: 90,
+    autoHeight: true,
+    //autoWidth: true,
+    speed: 800,
+    //touchRatio: 0,
+    //simulateTouch: false,
+    loop: true,
+    //preloadImages: false,
+    //lazy: true,
+    // Dotts
+    //pagination: {
+    //	el: '.slider-quality__pagging',
+    //	clickable: true,
+    //},
+    // Arrows
+    navigation: {
+      nextEl: ".more__item_next",
+      prevEl: ".more__item_prev",
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoHeight: true,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1279: {
+        slidesPerView: 3,
+        spaceBetween: 90,
+      },
+    },
+  });
+</script>
