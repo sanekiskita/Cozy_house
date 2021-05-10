@@ -704,7 +704,8 @@ body._lock {
 }
 
 .pets {
-  margin-bottom: 180px;
+  padding: 80px 0 100px 0;
+  background: #f6f6f6;
 }
 
 .pets__button {
@@ -763,7 +764,8 @@ body._lock {
 
 .help {
   text-align: center;
-  margin-bottom: 180px;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 
 .help h2 {
@@ -798,12 +800,15 @@ body._lock {
   color: #545454;
 }
 
+.donat {
+  background: #f6f6f6;
+}
+
 .donat__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 143px;
-  margin-bottom: 100px;
+  padding: 80px 143px 100px 143px;
 }
 
 .donat__img {
@@ -847,7 +852,9 @@ body._lock {
 }
 
 .our_pets {
-  margin-bottom: 100px;
+  background: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .our_pets__content {
@@ -856,7 +863,7 @@ body._lock {
 
 .our_pets__tittle {
   text-align: center;
-  margin: 80px 0 50px 0;
+  margin: 0 0 50px 0;
 }
 
 .our_pets__list {
@@ -907,6 +914,9 @@ body._lock {
   background: #fafafa;
   border-radius: 9px;
   margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .card__text {
@@ -915,6 +925,10 @@ body._lock {
   line-height: 23px;
   letter-spacing: 0.06em;
   color: #545454;
+}
+
+.card .button {
+  margin-bottom: 30px;
 }
 
 .page {
@@ -1267,7 +1281,7 @@ body._lock {
   }
 
   .donat__content {
-    margin: 0 9px 100px 9px;
+    padding: 80px 9px 100px 9px;
     text-align: center;
   }
 

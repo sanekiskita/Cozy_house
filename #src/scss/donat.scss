@@ -1,13 +1,13 @@
 .donat {
+  background: #f6f6f6;
   &__content {
     display: flex;
-    margin: 0 143px;
-    margin-bottom: 100px;
+    padding: 80px 143px 100px 143px;
     @media (max-width: $md2+px) {
       flex-direction: column;
     }
     @media (max-width: $md3+px) {
-      margin: 0 9px 100px 9px;
+      padding: 80px 9px 100px 9px;
       text-align: center;
     }
   }
