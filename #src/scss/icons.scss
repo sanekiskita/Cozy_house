@@ -1,9 +1,8 @@
 @font-face {
   font-family: "icons";
   font-display: swap;
-  src: url("../fonts/icons.ttf") format("truetype"),
-    url("../fonts/icons.woff") format("woff"),
-    url("../fonts/icons.svg") format("svg");
+  src: url("../fonts/icons.woff") format("woff"),
+    url("../fonts/icons.woff2#icons") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
