@@ -72,8 +72,8 @@ ibg();
 
 window.addEventListener("load", function () {
   if (document.querySelector(".wrapper")) {
-    document.querySelector(".wrapper").classList.remove("_load");
     setTimeout(function () {
+      document.querySelector(".wrapper").classList.remove("_load");
       document.querySelector(".wrapper").classList.add("_loaded");
     }, 0);
   }

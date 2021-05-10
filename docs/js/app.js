@@ -54,6 +54,24 @@ const friends = new Map([
         "Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.",
     },
   ],
+  [
+    "freddie",
+    {
+      name: "Freddie",
+      info: "Cat - British Shorthairr",
+      text:
+        "Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.",
+    },
+  ],
+  [
+    "charly",
+    {
+      name: "Charly",
+      info: "Dog - Jack Russell Terrier ",
+      text:
+        "This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.",
+    },
+  ],
 ]);
 ;
 var ua = window.navigator.userAgent;
@@ -131,6 +149,7 @@ ibg();
 window.addEventListener("load", function () {
   if (document.querySelector(".wrapper")) {
     setTimeout(function () {
+      document.querySelector(".wrapper").classList.remove("_load");
       document.querySelector(".wrapper").classList.add("_loaded");
     }, 0);
   }
@@ -295,10 +314,10 @@ function popup_open(item, video = "", name = "") {
       );
       curent_popup
         .querySelector(".popup__img img")
-        .setAttribute("src", `./img/popup/friends/${name}.svg`);
+        .setAttribute("src", `./img/img_pets/${name}.svg`);
       curent_popup
         .querySelector(".popup__img source")
-        .setAttribute("srcset", `./img/popup/friends/${name}.svg`);
+        .setAttribute("srcset", `./img/img_pets/${name}.svg`);
     }
     history.pushState("", "", "#" + item);
   }
